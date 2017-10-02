@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OnboardingVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingVC" id="BYZ-38-t0r" customClass="OnboardingVC" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJD-9z-low">
+                                <rect key="frame" x="139" y="274" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go To Signup"/>
+                                <connections>
+                                    <action selector="goToLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvS-LB-taO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsO-Ki-QWG">
+                                <rect key="frame" x="141" y="336" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go To Profile"/>
+                                <connections>
+                                    <action selector="goToProfile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9D-9s-pw7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-514" y="-98"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bLr-nD-PIt">
+            <objects>
+                <viewController id="Q17-oB-qLO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WDO-o6-hms">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMK-7N-OjU">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yE2-ct-j8U">
+                                        <rect key="frame" x="70" y="8" width="110" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="home_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="Ayg-14-9h4">
+                                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ayg-14-9h4" secondAttribute="height" multiplier="1:1" id="g16-0r-ZKn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="search_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="Rap-ki-9Nm">
+                                                <rect key="frame" x="22" y="0.0" width="22" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Rap-ki-9Nm" secondAttribute="height" multiplier="1:1" id="UmQ-c6-P0n"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="plus_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="BcS-as-ADW">
+                                                <rect key="frame" x="44" y="0.0" width="22" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="BcS-as-ADW" secondAttribute="height" multiplier="1:1" id="b0c-8y-dDg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="like_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="dDa-AN-QLQ">
+                                                <rect key="frame" x="66" y="0.0" width="22" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dDa-AN-QLQ" secondAttribute="height" multiplier="1:1" id="J8q-0N-Ld5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="profile_selected" translatesAutoresizingMaskIntoConstraints="NO" id="ziJ-gh-ITY">
+                                                <rect key="frame" x="88" y="0.0" width="22" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ziJ-gh-ITY" secondAttribute="height" multiplier="1:1" id="Xcm-8V-NMY"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDh-Hx-oH9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="z7z-GC-5Ef"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvg-qG-AHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346.39999999999998" y="-98.50074962518741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_unselected" width="22" height="22"/>
+        <image name="like_unselected" width="22" height="18"/>
+        <image name="plus_unselected" width="21" height="21"/>
+        <image name="profile_selected" width="22" height="22"/>
+        <image name="search_unselected" width="22" height="22"/>
+    </resources>
+</document>
